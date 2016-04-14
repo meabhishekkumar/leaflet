@@ -17,7 +17,7 @@
 
   function ready(error, data) {
     if (error) throw error;
-    var sampled = _.sampleSize(data, [n = 1000])
+    var sampled = _.sampleSize(data, [n = 800])
     //due to bug with more number of sample, we are getting a background tint layer
     _.forEach(sampled, function(d) {
       d.Latitude = +d.Latitude;
@@ -33,7 +33,7 @@
 
   }
 
-  
+
 
 
 })();
